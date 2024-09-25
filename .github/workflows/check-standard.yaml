@@ -1,8 +1,6 @@
 # Workflow derived from https://github.com/r-lib/actions/tree/v2/examples
 # Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
 on:
-  push:
-    branches: [main, master]
   workflow_dispatch:
   schedule:
     - cron: "47 14 * * 2"   # <=== Set to run at 14:47 on Tuesdays (avoiding 00:00 and top of the hour runs gives us a better chance for getting server time)
