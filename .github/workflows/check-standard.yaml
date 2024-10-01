@@ -49,6 +49,7 @@ jobs:
           path: ${{ matrix.pkg.file }}
 
   R-CMD-check:
+    timeout-minutes: 60
     needs: [list, fetch]
     runs-on: ${{ matrix.config.os }}
 
